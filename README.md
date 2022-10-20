@@ -1,4 +1,11 @@
-# CMake Tools
+# CMake Tools Fork
+
+This is a fork of ms-vscode.cmake-tools with some modifications.
+It conflicts with the original. So the original must be uninstalled when using this.
+
+---------------------
+
+ms-vscode.cmake-tools README is following:
 
 [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) provides the native developer a full-featured, convenient, and powerful workflow for CMake-based projects in Visual Studio Code.
 

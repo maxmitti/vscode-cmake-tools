@@ -441,8 +441,10 @@ export function parseCompileDefinition(str: string): [string, string | null] {
     }
 }
 
+export const extensionId = 'maxmitti.cmake-tools-fork';
+
 export function thisExtension() {
-    const extension = vscode.extensions.getExtension('ms-vscode.cmake-tools');
+    const extension = vscode.extensions.getExtension(extensionId);
     if (!extension) {
         throw new Error(localize('extension.is.undefined', 'Extension is undefined!'));
     }

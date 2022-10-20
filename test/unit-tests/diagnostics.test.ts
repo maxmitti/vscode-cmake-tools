@@ -153,7 +153,7 @@ suite('Diagnostics', () => {
         ];
         feedLines(consumer, [], error_output);
         expect(consumer.diagnostics.length).to.eq(2);
-        const coll = vscode.languages.createDiagnosticCollection('cmake-tools-test');
+        const coll = vscode.languages.createDiagnosticCollection('cmake-tools-fork-test');
         populateCollection(coll, consumer.diagnostics);
         const fullpath = 'dummyPath/CMakeLists.txt';
         expect(coll.has(vscode.Uri.file(fullpath))).to.be.true;

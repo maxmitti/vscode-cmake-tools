@@ -1780,6 +1780,9 @@ export async function activate(context: vscode.ExtensionContext): Promise<api.CM
     if (oldCMakeToolsExtension) {
         await vscode.window.showWarningMessage(localize('uninstall.old.cmaketools', 'Please uninstall any older versions of the CMake Tools extension. It is now published by Microsoft starting with version 1.2.0.'));
     }
+    if (vscode.extensions.getExtension('ms-vscode.cmake-tools')) {
+        await vscode.window.showWarningMessage(localize('uninstall.nonfork.cmaketools', 'Please uninstall Microsoft’s version of the CMake Tools extension. The fork does not work if Microsoft’s version is still installed.'));
+    }
 
     // Start with a partial feature set view. The first valid CMake project will cause a switch to full feature set.
     await enableFullFeatureSet(false);

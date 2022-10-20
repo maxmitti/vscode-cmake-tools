@@ -1,18 +1,18 @@
 {
-  "name": "cmake-tools",
-  "displayName": "CMake Tools",
-  "description": "Extended CMake support in Visual Studio Code",
-  "version": "1.13.0",
-  "publisher": "ms-vscode",
+  "name": "cmake-tools-fork",
+  "displayName": "CMake Tools Fork",
+  "description": "Fork of Microsoft’s extension with some modifications",
+  "version": "1.14.0",
+  "publisher": "maxmitti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/vscode-cmake-tools"
+    "url": "https://github.com/maxmitti/vscode-cmake-tools"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/microsoft/vscode-cmake-tools/issues"
+    "url": "https://github.com/maxmitti/vscode-cmake-tools/issues"
   },
-  "homepage": "https://github.com/microsoft/vscode-cmake-tools",
+  "homepage": "https://github.com/maxmitti/vscode-cmake-tools",
   "keywords": [
     "cmake",
     "tools",
@@ -2092,7 +2092,7 @@
     "translations-export": "gulp translations-export",
     "translations-generate": "gulp translations-generate",
     "translations-import": "gulp translations-import",
-    "package": "vsce package --yarn -o cmake-tools.vsix",
+    "package": "vsce package --yarn -o cmake-tools-fork.vsix",
     "pretest": "tsc -p test.tsconfig.json",
     "lint": "gulp lint",
     "smokeTests": "yarn run pretest && node ./out/test/smoke/badProject/runTest.js && node ./out/test/smoke/goodProject/runTest.js && node ./out/test/smoke/noCtest/runTest.js",

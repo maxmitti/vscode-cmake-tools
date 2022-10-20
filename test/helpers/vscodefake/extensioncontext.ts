@@ -1,3 +1,4 @@
+import { thisExtension } from '@cmt/util';
 import * as path from 'path';
 import * as vscode from 'vscode';
 import { TestMemento, StateMemento } from './memento';
@@ -41,7 +42,7 @@ export class DefaultExtensionContext implements vscode.ExtensionContext {
     extension: vscode.Extension<any>;
 
     constructor() {
-        this.extension = vscode.extensions.getExtension("ms-vscode.cmake-tools")!;
+        this.extension = thisExtension()!;
     }
     public clean() {
         (this.workspaceState as TestMemento).clear();
@@ -89,7 +90,7 @@ export class SmokeTestExtensionContext implements vscode.ExtensionContext {
     extension: vscode.Extension<any>;
 
     constructor(public readonly extensionPath: string) {
-        this.extension = vscode.extensions.getExtension("ms-vscode.cmake-tools")!;
+        this.extension = thisExtension()!;
     }
     public clean() {
         (this.workspaceState as TestMemento).clear();
