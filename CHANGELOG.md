@@ -1,5 +1,9 @@
 # What's New?
 
+## Fork Changes
+Modifications:
+- Automatically configure after a configuration preset has been selected
+
 ## 1.14
 Improvements:
 - Add an optional description field to kits. [PR #2944](https://github.com/microsoft/vscode-cmake-tools/pull/2944) [@TisziV](https://github.com/TisziV)

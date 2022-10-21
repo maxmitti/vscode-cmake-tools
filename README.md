@@ -3,6 +3,10 @@
 This is a fork of ms-vscode.cmake-tools with some modifications.
 It conflicts with the original. So the original must be uninstalled when using this.
 
+## Modifications
+
+- Automatically configure after a configuration preset has been selected
+
 ---------------------
 
 ms-vscode.cmake-tools README is following:
